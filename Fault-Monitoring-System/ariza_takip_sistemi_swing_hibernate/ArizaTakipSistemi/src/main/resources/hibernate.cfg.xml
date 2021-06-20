@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/db_ariza_takip_sistemi</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">root</property>
+    
+    
+        <property name = "hibernate.show_sql">true</property>
+        <property name = "hibernate.hbm2ddl.auto">update</property>
+    
+        <mapping class="com.fsk.arizatakipsistemi.models.ArizaKaydi"></mapping>
+        <mapping class="com.fsk.arizatakipsistemi.models.ArizaTuru"></mapping>
+        <mapping class="com.fsk.arizatakipsistemi.models.Birim"></mapping>
+        <mapping class="com.fsk.arizatakipsistemi.models.Donanim"></mapping>
+        <mapping class="com.fsk.arizatakipsistemi.models.Zimmet"></mapping>
+        <mapping class="com.fsk.arizatakipsistemi.models.IsYuku"></mapping>
+        <mapping class="com.fsk.arizatakipsistemi.models.Personel"></mapping> 
+        <mapping class="com.fsk.arizatakipsistemi.models.PersonelArizaListesi"></mapping>
+        <mapping class="com.fsk.arizatakipsistemi.models.PersonelToAriza"></mapping>
+        <mapping class="com.fsk.arizatakipsistemi.models.PersonelToBirim"></mapping>
+    
+    </session-factory>
+    
+</hibernate-configuration>
